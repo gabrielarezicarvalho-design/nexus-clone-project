@@ -77,14 +77,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Nexus PRO — Claude Code direto no seu projeto Lovable" },
+      {
+        name: "description",
+        content:
+          "Seu comando travou no Lovable? O Nexus PRO conecta o Claude Code oficial direto ao código do projeto e executa a alteração sem depender do chat. Planos a partir de R$ 29,99 sem expiração ou ilimitado a partir de R$ 109,99.",
+      },
+      { name: "author", content: "Nexus PRO" },
+      { property: "og:title", content: "Nexus PRO — Claude Code direto no seu projeto" },
+      {
+        property: "og:description",
+        content: "Execute qualquer alteração direto no código. Pague uma vez em reais, sem mensalidade em dólar.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:site", content: "@nexuspro" },
     ],
     links: [
       {
@@ -102,7 +109,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <head>
         <HeadContent />
       </head>
