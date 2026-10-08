@@ -44,7 +44,7 @@ function Index() {
           <div className="flex items-center gap-3">
             <div className="h-9 w-9 rounded-xl bg-[#2D8BFF] flex items-center justify-center font-black">N</div>
             <div className="leading-none">
-              <div className="display font-bold tracking-tight">NEXUS PRO</div>
+              <div className="display font-bold tracking-tight">NEXA PRO</div>
               <div className="text-[11px] tracking-[0.18em] text-white/60 font-semibold">CLAUDE CODE EDITION</div>
             </div>
           </div>
@@ -128,7 +128,7 @@ function Index() {
                     <span className="h-3 w-3 rounded-full bg-emerald-500" />
                   </div>
                   <div className="text-xs font-mono text-white/60 flex items-center gap-2">
-                    <Terminal className="h-3.5 w-3.5" /> claude-code — nexus pro
+                    <Terminal className="h-3.5 w-3.5" /> claude-code — nexa pro
                   </div>
                   <div className="h-2 w-16 rounded-full bg-white/10" />
                 </div>
@@ -192,7 +192,7 @@ function Index() {
           <div className="rounded-[20px] bg-[#2D8BFF] p-6 text-white relative overflow-hidden">
             <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-white/15 blur-2xl" />
             <div className="inline-flex items-center gap-2 rounded-full bg-white/15 border border-white/20 px-3 py-1 text-xs font-bold">
-              <Check className="h-3.5 w-3.5" /> COM NEXUS PRO
+              <Check className="h-3.5 w-3.5" /> COM NEXA PRO
             </div>
             <h3 className="display mt-3 text-xl font-bold">Agora: Claude Code direto no código</h3>
             <ul className="mt-4 space-y-2.5 text-sm text-white/90">
@@ -223,7 +223,7 @@ function Index() {
           </div>
           <div className="mt-8 grid md:grid-cols-3 gap-5">
             {[
-              { icon: Globe, title: "1. Conecte o projeto", desc: "Aponte o Nexus PRO para o repositório do seu app Lovable (GitHub). Leva menos de 1 minuto." },
+              { icon: Globe, title: "1. Conecte o projeto", desc: "Aponte o Nexa Pro para o repositório do seu app Lovable (GitHub). Leva menos de 1 minuto." },
               { icon: Code2, title: "2. Descreva a alteração", desc: "Digite o que precisa — 'crie checkout', 'corrija o bug do login', 'mude as cores' — como falaria com um dev." },
               { icon: Rocket, title: "3. Revise e publique", desc: "O Claude edita o código localmente. Você confere o diff e faz o push. Seu deploy continua normal." },
             ].map((s) => (
@@ -426,10 +426,10 @@ function Index() {
             </div>
             <div>
               <div className="display text-xl font-bold">Garantia incondicional de 7 dias</div>
-              <p className="mt-1 text-sm text-black/60 leading-relaxed">Teste o Nexus PRO no seu projeto real. Se não destravar sua entrega, devolvemos cada centavo. Sem perguntas, sem burocracia.</p>
+              <p className="mt-1 text-sm text-black/60 leading-relaxed">Teste o Nexa Pro no seu projeto real. Se não destravar sua entrega, devolvemos cada centavo. Sem perguntas, sem burocracia.</p>
             </div>
             <a href="#planos" className="shrink-0 rounded-full bg-[#2D8BFF] text-white px-7 py-3 text-sm font-extrabold hover:bg-[#1a78ee] transition inline-flex items-center gap-2">
-              Ativar Nexus PRO <ArrowRight className="h-4 w-4" />
+              Ativar Nexa Pro <ArrowRight className="h-4 w-4" />
             </a>
           </div>
         </div>
@@ -446,7 +446,7 @@ function Index() {
             {[
               {
                 q: "Preciso ter crédito no Lovable para usar?",
-                a: "Não. O Nexus PRO não passa pelo chat do Lovable. Ele conecta o Claude Code direto ao código do seu repositório e aplica a alteração localmente. Funciona mesmo com o Lovable zerado ou limitado.",
+                a: "Não. O Nexa Pro não passa pelo chat do Lovable. Ele conecta o Claude Code direto ao código do seu repositório e aplica a alteração localmente. Funciona mesmo com o Lovable zerado ou limitado.",
               },
               {
                 q: "Meu código continua seguro?",
@@ -485,10 +485,10 @@ function Index() {
             <div className="relative grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <h2 className="display text-[28px] md:text-[34px] font-bold leading-none">Pare de depender do chat. Volte a entregar hoje.</h2>
-                <p className="mt-3 text-sm text-white/80">Ative o Nexus PRO e faça sua próxima alteração direto no código em minutos.</p>
+                <p className="mt-3 text-sm text-white/80">Ative o Nexa Pro e faça sua próxima alteração direto no código em minutos.</p>
                 <div className="mt-6 flex flex-wrap gap-3">
                   <a href="#planos" className="inline-flex items-center gap-2 rounded-full bg-white text-[#2D8BFF] px-7 py-3.5 text-sm font-extrabold hover:bg-white/90 transition">
-                    Ativar Nexus PRO agora <ArrowRight className="h-4 w-4" />
+                    Ativar Nexa Pro agora <ArrowRight className="h-4 w-4" />
                   </a>
                   <a href="#" className="inline-flex items-center gap-2 rounded-full bg-white/15 border border-white/20 px-7 py-3.5 text-sm font-bold hover:bg-white/20 transition">
                     <MessageCircle className="h-4 w-4" /> Falar no WhatsApp
@@ -529,10 +529,10 @@ function Index() {
           <div>
             <div className="flex items-center gap-3">
               <div className="h-8 w-8 rounded-xl bg-white text-[#080a14] flex items-center justify-center font-black text-sm">N</div>
-              <div className="display font-bold">NEXUS PRO</div>
+              <div className="display font-bold">NEXA PRO</div>
             </div>
             <div className="mt-2 text-xs text-white/50 max-w-[420px] leading-relaxed">
-              Nexus PRO conecta o Claude Code oficial ao seu projeto. Conteúdo original inspirado, sem reprodução do site de referência. Preços ilustrativos — ajuste antes de publicar.
+              Nexa Pro conecta o Claude Code oficial ao seu projeto. Conteúdo original inspirado, sem reprodução do site de referência. Preços ilustrativos — ajuste antes de publicar.
             </div>
           </div>
           <div className="text-xs text-white/50 space-y-1">
@@ -551,7 +551,7 @@ function Index() {
             </a>
           </div>
         </div>
-        <div className="mx-auto max-w-[1160px] px-4 md:px-6 mt-6 text-center text-xs text-white/40">© {new Date().getFullYear()} Nexus PRO — Todos os direitos reservados.</div>
+        <div className="mx-auto max-w-[1160px] px-4 md:px-6 mt-6 text-center text-xs text-white/40">© {new Date().getFullYear()} Nexa Pro — Todos os direitos reservados.</div>
       </footer>
     </div>
   );
