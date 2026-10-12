@@ -44,7 +44,7 @@ function Index() {
           <div className="flex items-center gap-3">
             <div className="h-9 w-9 rounded-xl bg-[#2D8BFF] flex items-center justify-center font-black">N</div>
             <div className="leading-none">
-              <div className="display font-bold tracking-tight">Nexus Lovable</div>
+              <div className="display font-bold tracking-tight">Nexa Lovable</div>
               <div className="text-[11px] tracking-[0.18em] text-white/60 font-semibold">CLAUDE CODE EDITION</div>
             </div>
           </div>
