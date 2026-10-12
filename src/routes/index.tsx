@@ -108,7 +108,7 @@ function Index() {
               <div className="flex -space-x-2">
                 <img src="https://i.pravatar.cc/100?img=11" alt="" className="h-7 w-7 rounded-full border-2 border-[#080a14]" />
                 <img src="https://i.pravatar.cc/100?img=14" alt="" className="h-7 w-7 rounded-full border-2 border-[#080a14]" />
-                <img src="https://i.pravatar.cc/100?img=32" alt="" className="h-7 w-7 rounded-full border-2 border-[#080a14]" />
+                <img src="/vertex-uploads/402cc82fd56bcccc459fc2709f3802ef.png" alt="" className="h-7 w-7 rounded-full border-2 border-[#080a14]" />
               </div>
               <div className="leading-tight">
                 <div className="flex items-center gap-1 font-bold"><Star className="h-3.5 w-3.5 fill-amber-400 text-amber-400" /> 4.9/5 em 2.000+ avaliações</div>
