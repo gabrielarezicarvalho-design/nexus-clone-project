@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { useState } from "react";
 import {
   Zap,
@@ -53,6 +53,7 @@ function Index() {
             <a href="#planos" className="hover:text-white">Planos</a>
             <a href="#faq" className="hover:text-white">FAQ</a>
             <a href="#garantia" className="hover:text-white">Garantia</a>
+            <Link to="/notas" className="hover:text-white">Notas</Link>
           </div>
           <div className="hidden md:flex items-center gap-3">
             <a href="#planos" className="rounded-full bg-white text-[#080a14] px-5 py-2.5 text-sm font-bold hover:bg-white/90 transition inline-flex items-center gap-2">
@@ -68,6 +69,7 @@ function Index() {
             <a href="#como-funciona" onClick={() => setMobileOpen(false)} className="block py-2 text-sm font-medium">Como funciona</a>
             <a href="#planos" onClick={() => setMobileOpen(false)} className="block py-2 text-sm font-medium">Planos</a>
             <a href="#faq" onClick={() => setMobileOpen(false)} className="block py-2 text-sm font-medium">FAQ</a>
+            <Link to="/notas" onClick={() => setMobileOpen(false)} className="block py-2 text-sm font-medium">Notas</Link>
             <a href="#planos" className="mt-2 flex justify-center rounded-full bg-[#2D8BFF] py-3 text-sm font-bold">Ver planos</a>
           </div>
         )}
