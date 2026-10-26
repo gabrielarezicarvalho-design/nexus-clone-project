@@ -354,7 +354,7 @@ function TermosEPrivacidade() {
             to="/"
             className="rounded-full bg-[#2D8BFF] px-6 py-3 text-sm font-bold hover:bg-[#1a78ee] transition shrink-0 shadow-lg shadow-[#2D8BFF]/25"
           >
-            Ver planos do lunax api
+            Ver planos do lunax dev
           </Link>
         </div>
       </main>
