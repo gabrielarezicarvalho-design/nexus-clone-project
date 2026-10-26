@@ -437,7 +437,7 @@ function Index() {
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* AVALIAÇÕES DE CLIENTES */}
       <section id="faq" className="py-10">
         <div className="mx-auto max-w-[1160px] px-4 md:px-6">
           <div className="text-center">
@@ -479,7 +479,7 @@ function Index() {
         </div>
       </section>
 
-      {/* CTA FINAL */}
+      {/* AVALIAÇÕES DE CLIENTES */}
       <section className="py-10">
         <div className="mx-auto max-w-[1160px] px-4 md:px-6">
           <div className="rounded-[24px] bg-gradient-to-br from-[#2D8BFF] to-[#1a5fcc] p-6 md:p-10 text-white relative overflow-hidden">
