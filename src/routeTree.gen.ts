@@ -9,9 +9,15 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TermosEPrivacidadeRouteImport } from './routes/termos-e-privacidade'
 import { Route as NotasRouteImport } from './routes/notas'
 import { Route as IndexRouteImport } from './routes/index'
 
+const TermosEPrivacidadeRoute = TermosEPrivacidadeRouteImport.update({
+  id: '/termos-e-privacidade',
+  path: '/termos-e-privacidade',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const NotasRoute = NotasRouteImport.update({
   id: '/notas',
   path: '/notas',
@@ -26,31 +32,42 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/notas': typeof NotasRoute
+  '/termos-e-privacidade': typeof TermosEPrivacidadeRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/notas': typeof NotasRoute
+  '/termos-e-privacidade': typeof TermosEPrivacidadeRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/notas': typeof NotasRoute
+  '/termos-e-privacidade': typeof TermosEPrivacidadeRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/notas'
+  fullPaths: '/' | '/notas' | '/termos-e-privacidade'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/notas'
-  id: '__root__' | '/' | '/notas'
+  to: '/' | '/notas' | '/termos-e-privacidade'
+  id: '__root__' | '/' | '/notas' | '/termos-e-privacidade'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   NotasRoute: typeof NotasRoute
+  TermosEPrivacidadeRoute: typeof TermosEPrivacidadeRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/termos-e-privacidade': {
+      id: '/termos-e-privacidade'
+      path: '/termos-e-privacidade'
+      fullPath: '/termos-e-privacidade'
+      preLoaderRoute: typeof TermosEPrivacidadeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/notas': {
       id: '/notas'
       path: '/notas'
@@ -71,6 +88,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   NotasRoute: NotasRoute,
+  TermosEPrivacidadeRoute: TermosEPrivacidadeRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

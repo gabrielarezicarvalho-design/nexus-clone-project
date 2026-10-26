@@ -548,9 +548,12 @@ function Index() {
             <a href="#faq" className="block hover:text-white">
               FAQ
             </a>
-            <a href="#" className="inline-flex items-center gap-1 hover:text-white">
+            <Link
+              to="/termos-e-privacidade"
+              className="inline-flex items-center gap-1 hover:text-white transition"
+            >
               Termos e privacidade <ExternalLink className="h-3 w-3" />
-            </a>
+            </Link>
           </div>
         </div>
         <div className="mx-auto max-w-[1160px] px-4 md:px-6 mt-6 text-center text-xs text-white/40">© {new Date().getFullYear()} Nexus Lovable — Todos os direitos reservados.</div>
