@@ -42,9 +42,9 @@ function Index() {
       <nav className="sticky top-0 z-50 backdrop-blur-xl bg-[#080a14]/70 border-b border-white/10">
         <div className="mx-auto max-w-[1160px] px-4 md:px-6 h-[64px] flex items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <div className="h-9 w-9 rounded-xl bg-[#2D8BFF] flex items-center justify-center font-black">N</div>
+            <div className="h-9 w-9 rounded-xl bg-[#2D8BFF] flex items-center justify-center font-black">L</div>
             <div className="leading-none">
-              <div className="display font-bold tracking-tight">Nexa Api</div>
+              <div className="display font-bold tracking-tight">lunax api</div>
               <div className="text-[11px] tracking-[0.18em] text-white/60 font-semibold">CLAUDE CODE EDITION</div>
             </div>
           </div>
