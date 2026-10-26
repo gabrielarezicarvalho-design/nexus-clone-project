@@ -58,7 +58,7 @@ function TermosEPrivacidade() {
             <ShieldCheck className="h-3.5 w-3.5 text-[#2D8BFF]" />
             CONTRATO E PRIVACIDADE DE DADOS
           </div>
-          <h1 className="display mt-4 text-3xl md:text-5xl font-bold tracking-tight">
+          <h1 className="display mt-3 text-xl md:text-2xl font-bold tracking-tight">
             Termos de Uso e Política de Privacidade
           </h1>
           <p className="mt-3 text-sm md:text-base text-white/65 max-w-2xl mx-auto">
