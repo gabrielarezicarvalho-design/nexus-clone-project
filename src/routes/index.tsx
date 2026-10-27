@@ -86,7 +86,7 @@ function Index() {
             </div>
             <h1 className="display mt-4 text-[34px] md:text-[48px] font-bold leading-[0.95] tracking-tight">
               Travou no <span className="text-[#2D8BFF]">Lovable</span>? <br />
-              O Claude Code <span className="bg-gradient-to-r from-[#2D8BFF] to-cyan-400 bg-clip-text text-transparent">destrava hoje.</span>
+              O Nexa Code <span className="bg-gradient-to-r from-[#2D8BFF] to-cyan-400 bg-clip-text text-transparent">destrava hoje.</span>
             </h1>
             <p className="mt-4 text-[15px] md:text-[17px] leading-relaxed text-white/70 max-w-[560px]">
               O chat do Lovable limitou e seu comando não executa mais. O <b className="text-white">Claude Code oficial</b> abre o código do seu projeto e aplica a alteração direto — sem passar pelo chat, sem gastar crédito lá.
