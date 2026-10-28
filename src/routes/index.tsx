@@ -35,14 +35,14 @@ function Index() {
   const [billing, setBilling] = useState<"tokens" | "unlimited">("tokens");
 
   return (
-    <div className="min-h-screen bg-[#080a14] text-white antialiased selection:bg-[#2D8BFF] selection:text-white">
+    <div className="min-h-screen bg-[#080a14] text-white antialiased selection:bg-red-600 selection:text-white">
       <style>{`@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap'); *{font-family:Inter,system-ui,sans-serif} .display{font-family:Space Grotesk,sans-serif}`}</style>
 
       {/* NAV */}
       <nav className="sticky top-0 z-50 backdrop-blur-xl bg-[#080a14]/70 border-b border-white/10">
         <div className="mx-auto max-w-[1160px] px-4 md:px-6 h-[64px] flex items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <div className="h-9 w-9 rounded-xl bg-[#2D8BFF] flex items-center justify-center font-black">L</div>
+            <div className="h-9 w-9 rounded-xl bg-red-600 flex items-center justify-center font-black">N</div>
             <div className="leading-none">
               <div className="display font-bold tracking-tight">lunax api</div>
               <div className="text-[11px] tracking-[0.18em] text-white/60 font-semibold">CLAUDE CODE EDITION</div>
@@ -70,23 +70,23 @@ function Index() {
             <a href="#planos" onClick={() => setMobileOpen(false)} className="block py-2 text-sm font-medium">Planos</a>
             <a href="#faq" onClick={() => setMobileOpen(false)} className="block py-2 text-sm font-medium">FAQ</a>
             <Link to="/notas" onClick={() => setMobileOpen(false)} className="block py-2 text-sm font-medium">Notas</Link>
-            <a href="#planos" className="mt-2 flex justify-center rounded-full bg-[#2D8BFF] py-3 text-sm font-bold">Ver planos</a>
+            <a href="#planos" className="mt-2 flex justify-center rounded-full bg-red-600 py-3 text-sm font-bold">Ver planos</a>
           </div>
         )}
       </nav>
 
       {/* HERO */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#2D8BFF]/15 via-transparent to-transparent" />
-        <div className="absolute -top-40 left-1/2 -translate-x-1/2 h-[600px] w-[900px] rounded-full bg-[#2D8BFF]/20 blur-[80px]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-red-600/15 via-transparent to-transparent" />
+        <div className="absolute -top-40 left-1/2 -translate-x-1/2 h-[600px] w-[900px] rounded-full bg-red-600/20 blur-[80px]" />
         <div className="relative mx-auto max-w-[1160px] px-4 md:px-6 py-10 md:py-16 grid lg:grid-cols-2 gap-10 items-center">
           <div>
             <div className="inline-flex items-center gap-2 rounded-full bg-[#2D8BFF]/15 border border-[#2D8BFF]/30 px-3 py-1.5 text-xs font-bold tracking-wide">
               <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" /> MÉTODO ATUALIZADO PARA O LOVABLE 2026
             </div>
             <h1 className="display mt-4 text-[34px] md:text-[48px] font-bold leading-[0.95] tracking-tight">
-              Travou no <span className="text-[#2D8BFF]">Lovable</span>? <br />
-              O Nexa Code <span className="bg-gradient-to-r from-[#2D8BFF] to-cyan-400 bg-clip-text text-transparent">destrava hoje.</span>
+              Travou no <span className="text-red-500">Lovable</span>? <br />
+              O Nexa Code <span className="bg-gradient-to-r from-red-500 to-orange-400 bg-clip-text text-transparent">destrava hoje.</span>
             </h1>
             <p className="mt-4 text-[15px] md:text-[17px] leading-relaxed text-white/70 max-w-[560px]">
               O chat do Lovable limitou e seu comando não executa mais. O <b className="text-white">Claude Code oficial</b> abre o código do seu projeto e aplica a alteração direto — sem passar pelo chat, sem gastar crédito lá.
@@ -98,7 +98,7 @@ function Index() {
             </div>
 
             <div className="mt-7 flex flex-wrap gap-3">
-              <a href="#planos" className="inline-flex items-center gap-2 rounded-full bg-[#2D8BFF] px-7 py-3.5 text-sm font-extrabold hover:bg-[#1a78ee] transition shadow-lg shadow-[#2D8BFF]/20">
+              <a href="#planos" className="inline-flex items-center gap-2 rounded-full bg-red-600 px-7 py-3.5 text-sm font-extrabold hover:bg-red-700 transition shadow-lg shadow-red-600/20">
                 Quero destravar agora <ArrowRight className="h-4 w-4" />
               </a>
               <a href="#como-funciona" className="inline-flex items-center gap-2 rounded-full bg-white text-[#080a14] px-7 py-3.5 text-sm font-bold hover:bg-white/90 transition">
@@ -143,13 +143,13 @@ function Index() {
                   </div>
                   <div className="mt-3 rounded-lg bg-white/[0.06] border border-white/10 p-3">
                     <div className="flex items-center gap-2 text-white/80">
-                      <Cpu className="h-3.5 w-3.5 text-[#2D8BFF]" /> Analisando código...
+                      <Cpu className="h-3.5 w-3.5 text-red-500" /> Analisando código...
                       <span className="ml-auto text-emerald-400 flex items-center gap-1">
                         <Check className="h-3 w-3" /> feito
                       </span>
                     </div>
                     <div className="mt-2 h-1.5 rounded-full bg-white/10 overflow-hidden">
-                      <div className="h-full w-[92%] bg-[#2D8BFF] rounded-full" />
+                      <div className="h-full w-[92%] bg-red-600 rounded-full" />
                     </div>
                     <div className="mt-2 text-white/60">Editando 3 arquivos • Criando 1 rota • Sem tocar no chat do Lovable</div>
                   </div>
@@ -191,7 +191,7 @@ function Index() {
               </li>
             </ul>
           </div>
-          <div className="rounded-[20px] bg-[#2D8BFF] p-6 text-white relative overflow-hidden">
+          <div className="rounded-[20px] bg-red-600 p-6 text-white relative overflow-hidden">
             <div className="absolute -right-10 -top-10 h-40 w-40 rounded-full bg-white/15 blur-2xl" />
             <div className="inline-flex items-center gap-2 rounded-full bg-white/15 border border-white/20 px-3 py-1 text-xs font-bold">
               <Check className="h-3.5 w-3.5" /> COM NEXUS LOVABLE
@@ -208,7 +208,7 @@ function Index() {
                 <Check className="h-4 w-4 mt-0.5 shrink-0" /> Você revisa e dá push quando quiser
               </li>
             </ul>
-            <a href="#planos" className="mt-5 inline-flex items-center gap-2 rounded-full bg-white text-[#2D8BFF] px-5 py-2.5 text-sm font-extrabold">
+            <a href="#planos" className="mt-5 inline-flex items-center gap-2 rounded-full bg-white text-red-600 px-5 py-2.5 text-sm font-extrabold">
               Começar agora <ArrowRight className="h-4 w-4" />
             </a>
           </div>
@@ -279,7 +279,7 @@ function Index() {
       <section id="planos" className="py-10 md:py-12">
         <div className="mx-auto max-w-[1160px] px-4 md:px-6">
           <div className="text-center max-w-[720px] mx-auto">
-            <div className="inline-flex items-center gap-2 rounded-full bg-[#2D8BFF]/15 border border-[#2D8BFF]/30 px-3 py-1 text-xs font-bold tracking-widest text-[#7ab1ff]">PLANOS</div>
+            <div className="inline-flex items-center gap-2 rounded-full bg-red-600/15 border border-red-600/30 px-3 py-1 text-xs font-bold tracking-widest text-red-300">PLANOS</div>
             <h2 className="display mt-3 text-[28px] md:text-[36px] font-bold leading-none">Escolha como prefere pagar</h2>
             <p className="mt-3 text-sm text-white/60">Pague uma vez em reais. Sem assinatura em dólar, sem surpresa na fatura.</p>
             <div className="mt-5 inline-flex rounded-full bg-white/10 p-1 border border-white/10">
@@ -320,7 +320,7 @@ function Index() {
                 </a>
               </div>
 
-              <div className="rounded-[20px] bg-[#2D8BFF] p-6 text-white relative overflow-hidden border border-white/10">
+              <div className="rounded-[20px] bg-red-600 p-6 text-white relative overflow-hidden border border-white/10">
                 <div className="absolute -right-6 -top-6 h-32 w-32 rounded-full bg-white/15 blur-xl" />
                 <div className="inline-flex rounded-full bg-white text-[#2D8BFF] px-3 py-1 text-xs font-extrabold">MAIS VENDIDO</div>
                 <div className="display mt-3 text-3xl font-bold">R$ 59,90</div>
@@ -336,7 +336,7 @@ function Index() {
                     <Check className="h-4 w-4 mt-0.5" /> Prioridade no suporte
                   </li>
                 </ul>
-                <a href="#" className="mt-6 flex w-full justify-center rounded-full bg-white text-[#2D8BFF] py-3 text-sm font-extrabold hover:bg-white/90 transition">
+                <a href="#" className="mt-6 flex w-full justify-center rounded-full bg-white text-red-600 py-3 text-sm font-extrabold hover:bg-white/90 transition">
                   Quero o mais vendido <ArrowRight className="h-4 w-4 ml-1" />
                 </a>
                 <div className="mt-3 text-center text-xs text-white/80">Ativação imediata após pagamento</div>
@@ -398,7 +398,7 @@ function Index() {
                     <Check className="h-4 w-4 mt-0.5" /> Acesso a novidades primeiro
                   </li>
                 </ul>
-                <a href="#" className="mt-6 flex w-full justify-center rounded-full bg-white text-[#2D8BFF] py-3 text-sm font-extrabold">
+                <a href="#" className="mt-6 flex w-full justify-center rounded-full bg-white text-red-600 py-3 text-sm font-extrabold">
                   Garantir anual <ArrowRight className="h-4 w-4 ml-1" />
                 </a>
               </div>
@@ -430,7 +430,7 @@ function Index() {
               <div className="display text-xl font-bold">Garantia incondicional de 7 dias</div>
               <p className="mt-1 text-sm text-black/60 leading-relaxed">Teste o Nexus Lovable no seu projeto real. Se não destravar sua entrega, devolvemos cada centavo. Sem perguntas, sem burocracia.</p>
             </div>
-            <a href="#planos" className="shrink-0 rounded-full bg-[#2D8BFF] text-white px-7 py-3 text-sm font-extrabold hover:bg-[#1a78ee] transition inline-flex items-center gap-2">
+            <a href="#planos" className="shrink-0 rounded-full bg-red-600 text-white px-7 py-3 text-sm font-extrabold hover:bg-red-700 transition inline-flex items-center gap-2">
               Ativar Nexus Lovable <ArrowRight className="h-4 w-4" />
             </a>
           </div>
@@ -482,14 +482,14 @@ function Index() {
       {/* AVALIAÇÕES DE CLIENTES */}
       <section className="py-10">
         <div className="mx-auto max-w-[1160px] px-4 md:px-6">
-          <div className="rounded-[24px] bg-gradient-to-br from-[#2D8BFF] to-[#1a5fcc] p-6 md:p-10 text-white relative overflow-hidden">
+          <div className="rounded-[24px] bg-gradient-to-br from-red-600 to-red-800 p-6 md:p-10 text-white relative overflow-hidden">
             <div className="absolute -right-10 -top-10 h-64 w-64 rounded-full bg-white/15 blur-2xl" />
             <div className="relative grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <h2 className="display text-[28px] md:text-[34px] font-bold leading-none">Pare de depender do chat. Volte a entregar hoje.</h2>
                 <p className="mt-3 text-sm text-white/80">Ative o Nexus Lovable e faça sua próxima alteração direto no código em minutos.</p>
                 <div className="mt-6 flex flex-wrap gap-3">
-                  <a href="#planos" className="inline-flex items-center gap-2 rounded-full bg-white text-[#2D8BFF] px-7 py-3.5 text-sm font-extrabold hover:bg-white/90 transition">
+                  <a href="#planos" className="inline-flex items-center gap-2 rounded-full bg-white text-red-600 px-7 py-3.5 text-sm font-extrabold hover:bg-white/90 transition">
                     Ativar Nexus Lovable agora <ArrowRight className="h-4 w-4" />
                   </a>
                   <a href="#" className="inline-flex items-center gap-2 rounded-full bg-white/15 border border-white/20 px-7 py-3.5 text-sm font-bold hover:bg-white/20 transition">
